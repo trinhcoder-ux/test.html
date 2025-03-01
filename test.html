@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Xuân Dưới Mái Trường</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: black;
+        }
+        header {
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background: #87ceeb;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 12px 24px;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 25px;
+            transition: all 0.3s ease-in-out;
+            margin: 5px;
+            background: linear-gradient(45deg, #add8e6, #b0e0e6);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a:hover {
+            background: linear-gradient(45deg, #5f9ea0, #4682b4);
+            transform: scale(1.1);
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            background: #e0ffff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
+            border-radius: 8px;
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        footer {
+            background: #87ceeb;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let sections = document.querySelectorAll(".section");
+            let navLinks = document.querySelectorAll("nav a");
+            function showSection(id) {
+                sections.forEach(section => section.classList.remove("active"));
+                document.getElementById(id).classList.add("active");
+            }
+            navLinks.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    let targetId = this.getAttribute("href").substring(1);
+                    showSection(targetId);
+                });
+            });
+            showSection("gioithieu");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        Cấp 3 - Một Thời Để Nhớ
+    </header>
+    <nav>
+        <a href="#gioithieu">Giới Thiệu</a>
+        <a href="#baiviet">Bài Viết</a>
+        <a href="#hinhanh">Hình Ảnh</a>
+    </nav>
+    <main>
+        <div class="section" id="gioithieu">
+            <h2>Giới Thiệu</h2>
+            <p>Mọi người vẫn thường hay nói là : Cấp 3 thực sự rất đắt, đáng giá bằng 1000 ngày nắng đẹp nhất của thanh xuân. Đối với bạn, cấp 3 là gì? Cấp 3 đối với mình là những ngày nắng vàng ươm, những ngày vô lo vô nghĩ, là khoảng thời gian ngây thơ trong sáng nhất, là những lần chạy hối hả cho kịp tiếng chuông vào học, là những lần bị ghi tên vào sổ đầu bài, là… những rung động với cậu bạn bàn bên mà không dám nói. Ngày đó tụi mình chẳng có gì, chỉ có thời gian vừa dài vừa rộng, nhưng mà rồi chớp mắt một cái, những đứa trẻ ngày nào sẽ phải lớn, phải bước ra đời bằng những ngây ngô, khờ dại, những lần sai, những vấp ngã tưởng chừng như đau lắm. Ngày đấy thầy cô bảo là lúc mà được mặc quần đen áo trắng ấy là những ngày hạnh phúc nhất nhưng mà chẳng ai tin đâu. Bây giờ lớn rồi nhìn lại mới thấy đúng nhở, làm người lớn sao mà khó thế. Vậy nên hi vọng là những ai còn đang được ngồi trên ghế nhà trường hãy trân trọng và hết mình với tuổi trẻ nhá.</p>
+        </div>
+        <div class="section" id="baiviet">
+            <h2>Bài Viết</h2>
+            <h3>Trống tan trường đã điểm rồi (Sưu tầm)</h3>
+            <p>Trống tan trường đã rung lên rộn rã</p>
+            <p>Giờ phút chia tay thực sự đến rồi</p>
+            <p>Thầy cô, bạn bè, lớp học mến yêu ơi</p>
+            <p>Nói gì đi bởi ngày mai chẳng gặp</p>
+            <p>Bao tháng năm chung niềm vui sách ,cặp</p>
+            <p>Bảng đen dìu từng nét chữ thơ ngây</p>
+            <p>Tóc thầy bạc cho em lớn mỗi ngày</p>
+            <p>Phấn trắng rơi cho cuộc đời em mở</p>
+            <p>Bạn bè ơi, đừng nghẹn ngào nức nở</p>
+            <p>Dẫu mai đây chẳng còn được đủ đầy</p>
+            <p>Dù mai ngày cuộc sống có đổi thay</p>
+            <p>Ánh mắt thân quen chợt trở thành xa lạ</p>
+            <p>Chia tay rồi mỗi đứa đi một ngả</p>
+            <p>Lưu bút yêu thương một ngày sẽ ướt nhoè</p>
+            <p>Bởi cuộc đời đâu phải nắng vàng hoe</p>
+            <p>Bình minh lên là chói chang rực rỡ</p>
+            <p>Rồi mai đây mỗi mùa hoa phượng nở</p>
+            <p>Sân trường tấp nập chẳng thấy bóng bạn xưa</p>
+            <p>Ghế đá vẫn nguyên sao chợt bỗng như thừa</p>
+            <p>Bởi còn đâu mối tình khờ ngày ấy</p>
+            <p>Nắng cứ đổ cho sân trường bốc cháy</p>
+            <p>Nức nở nghẹn ngào giọt nước mắt chia ly</p>
+            <p>Mái trường ơi còn thể nói được gì</p>
+            <p>Hết thật rồi tuổi học trò áo trắng</p>
+        </div>
+        <div class="section" id="hinhanh">
+            <h2>Hình Ảnh</h2>
+            <p>Những khoảnh khắc thanh xuân đáng nhớ.</p>
+            <div class="image-gallery">
+                <img src="https://www.baolongan.vn/image/news/2024/20240623/images/57_76426061_0.png" alt="Khoảnh khắc 1">
+                <img src="https://congstudio.vn/wp-content/uploads/2022/12/chup-anh-ky-yeu-cap-3-1-22-scaled.jpg" alt="Khoảnh khắc 2">
+            </div>
+            <div class="video-gallery">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZsomBUyjxdc?si=FMrxkDOPepqqrha3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>           
+            </div>
+        </div>
+
+        <style>
+        
+        #hinhanh h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        #hinhanh p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        
+        .image-gallery img {
+            width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-gallery {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        
+        iframe {
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        </style>
+
+    </main>
+    <footer>
+        &copy; Nguyễn Khánh Trình 12A2 | Liên hệ: tnguyenkhanh1508@gmail.com
+    </footer>
+</body>
+</html>
