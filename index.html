@@ -19,11 +19,13 @@
             padding: 20px;
             font-size: 24px;
             font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         nav {
             background: #87ceeb;
             text-align: center;
             padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         nav a {
             color: black;
@@ -65,6 +67,7 @@
             padding: 10px;
             margin-top: 20px;
         }
+          
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -93,6 +96,7 @@
         <a href="#gioithieu">Giới Thiệu</a>
         <a href="#baiviet">Bài Viết</a>
         <a href="#hinhanh">Hình Ảnh</a>
+        <a href="#lienhe">Liên Hệ</a>
     </nav>
     <main>
         <div class="section" id="gioithieu">
@@ -187,9 +191,68 @@
 
         </style>
 
+        <div class="section" id="lienhe">
+            <h2>Bình Luận</h2>
+            <div class="comment-section">
+                <div class="comment-box">
+                    <input type="text" placeholder="Nhập bình luận của bạn..." class="comment-input">
+                    <button class="comment-btn">Gửi</button>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .comment-section {
+                max-width: 600px;
+                margin: 20px auto;
+            }
+            
+            .comment-box {
+                background-color: #fff;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                border: 1px solid #e0e0e0;
+                display: flex;
+                gap: 10px;
+            }
+            
+            .comment-input {
+                flex: 1;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                outline: none;
+                transition: border-color 0.3s ease;
+            }
+            
+            .comment-input:focus {
+                border-color: #4A90E2;
+            }
+            
+            .comment-btn {
+                background-color: #4A90E2;
+                color: #fff;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.2s;
+            }
+            
+            .comment-btn:hover {
+                background-color: #357ABD;
+            }
+            
+            .comment-btn:active {
+                transform: scale(0.98);
+            }
+            
+        </style>
+
     </main>
     <footer>
-        &copy; Nguyễn Khánh Trình 12A2 | Liên hệ: tnguyenkhanh1508@gmail.com
+        © 2025 Thanh Xuân Dưới Mái Trường
     </footer>
 </body>
 </html>
